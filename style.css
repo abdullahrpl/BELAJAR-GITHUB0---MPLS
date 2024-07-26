@@ -41,18 +41,22 @@ nav ul li a:hover{
     border-radius: 10%;
 }
 
-
+.potoimg{
+    width: 30%;
+    margin-top: -20%;
+    margin-left: 60%;
+}
 
 .detel{
     margin-left: 8%;
     margin-top: 16%;
-
+    height: 20%;
 }
 
 .detel h1{
     font-size: 50px;
     color: #212121;
-    margin-bottom: 20px;
+    margin-top: 20%;
 }
 
 span{
@@ -76,7 +80,7 @@ span{
     margin: 35px 0;
     border-radius: 5px;
     transition: 0.5s;
-    margin-left: 130px;
+    margin-left: 110px;
 }
 
 .btn:hover{
