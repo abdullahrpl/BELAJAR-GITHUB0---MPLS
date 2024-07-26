@@ -42,3 +42,10 @@ nav ul li a:hover{
     transition: 0.3s;
     border-radius: 10%;
 }
+
+.about{
+    color: darkblue;
+}
+.poto{
+    margin-left: 100;
+}

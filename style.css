@@ -43,6 +43,10 @@ nav ul li a:hover{
     border-radius: 10%;
 }
 
+.home{
+    color: darkblue;
+}
+
 .potoimg{
     width: 30%;
     margin-top: -20%;
