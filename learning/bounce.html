@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bounce</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: skyblue;
+        }
+        .langit{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tanah{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            background: url(https://www.pngkey.com/png/full/858-8587218_png-rumput-landscape.png);
+            background-size: cover;
+        }
+        .bola{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="langit"></div>
+        <div class="tanah">
+            <div class="bola"></div>
+        </div>
+    </div>
 </body>
 </html>
