@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tb1{
+            width: 80%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 20px 10px 50px lightgray;
+        }
+        .tb1 td{
+            text-align: center;
+        }
+        .tb1, th, td{
+            padding: 25px;
+            border-collapse: collapse;
+        }
+        tbody tr:nth-child(even){
+            background-color: lightgray;
+        }
+        .btn{
+            transition: 0.5s;
+            font-weight: bold;
+            padding: 13px;
+            text-decoration: none;
+            color: white;
+        }
+        .btn-progress{
+            background-color: rgb(51, 195, 51);
+            border-radius: 5px;
+        }
+        .btn-open{
+            background-color: rgb(249, 218, 15);
+            border-radius: 5px;
+        }
+        .btn-onhold{
+            background-color: red;
+            border-radius: 5px;
+        }
+        .btn-progress:hover{
+            opacity: 70%;
+        }
+        .btn-onhold:hover{
+            opacity: 70%;
+        }
+        .btn-open:hover{
+            opacity: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="tb1">
+            <thead>
+                <th>Invoice</th>
+                <th>Customer</th>
+                <th>Ship</th>
+                <th>Price</th>
+                <th>Purchased Price</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$1200</td>
+                    <td><a class="btn btn-progress" href="#">Progress</a></td>
+                </tr>
+                <tr>
+                    <td>1001</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$1200</td>
+                    <td><a class="btn btn-open" href="#">Open</a></td>
+                </tr><tr>
+                    <td>1001</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$1200</td>
+                    <td><a class="btn btn-onhold" href="#">On-Hold</a></td>
+                </tr><tr>
+                    <td>1001</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$1200</td>
+                    <td><a class="btn btn-onhold" href="#">On-Hold</a></td>
+                </tr><tr>
+                    <td>1001</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$1200</td>
+                    <td><a class="btn btn-open" href="#">Open</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

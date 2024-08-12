@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .table{
+            width: 80%;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 20px 10px 50px #0000004a;
+        }
+        .table, th, td{
+            padding: 10px;
+            /* border: solid black 1px; */
+            border-collapse: collapse;
+        }
+        tbody tr:nth-child(even){
+            background: lightblue;
+        }
+        tbody tr:hover{
+        background-color: lightgray;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .btn-edit{
+            transition: 0.3s;
+            background: darkblue;
+            padding: 5px 30px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .btn-edit:hover{
+            background: rgba(34, 114, 200, 0.867);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <th>No</th>
+                <th>Kode Mapel</th>
+                <th>Jam Mapel</th>
+                <th>Nama Mapel</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>MP123</td>
+                    <td>Diniyah</td>
+                    <td>2 JP</td>
+                    <td class="text-center"><a class="btn-edit" href="">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>MP123</td>
+                    <td>Diniyah</td>
+                    <td>2 JP</td>
+                    <td class="text-center"><a class="btn-edit" href="">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>MP123</td>
+                    <td>Diniyah</td>
+                    <td>2 JP</td>
+                    <td class="text-center"><a class="btn-edit" href="">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>MP123</td>
+                    <td>Diniyah</td>
+                    <td>2 JP</td>
+                    <td class="text-center"><a class="btn-edit" href="">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>MP123</td>
+                    <td>Diniyah</td>
+                    <td>2 JP</td>
+                    <td class="text-center"><a class="btn-edit" href="">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>MP123</td>
+                    <td>Diniyah</td>
+                    <td>2 JP</td>
+                    <td class="text-center"><a class="btn-edit" href="">Edit</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="text-center" colspan="4">Jumlah Jam Pelajaran</td>
+                    <td>10 JP</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
