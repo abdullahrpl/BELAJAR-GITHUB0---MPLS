@@ -6,7 +6,7 @@ body{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to bottom right, #fff, #475, #000);
-    animation: gradient;
+    animation: gradient 2s infinite alternate;
     background-size: 300%;
 }
 
