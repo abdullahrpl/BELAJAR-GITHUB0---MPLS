@@ -5,5 +5,26 @@
 body{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient( #fff, #000);
+    background: linear-gradient(to bottom right, #fff, #475, #000);
+    animation: gradient;
+    background-size: 300%;
+}
+
+/* GRADIENT ANIMATION */
+
+@keyframes gradient{
+    0%{
+        background-position: top;
+    }25%{
+        background-position: right;
+        background-size: 250%;
+    }50%{
+        background-position: left;
+        background-size: 350%;
+    }75%{
+        background-position: bottom;
+        background-size: 200%;
+    }100%{
+        background-position: center;
+    }
 }
