@@ -24,8 +24,19 @@ fieldset{
 }
 legend{
     font-weight: bold;
+    color: #fff;
     background-color: #0088cc;
     padding: 15px 48px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    border-radius: 100px;
+}
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 
