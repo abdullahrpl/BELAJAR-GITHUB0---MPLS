@@ -5,9 +5,18 @@
 body{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to bottom right, #fff, #475, #000);
     animation: gradient 10s infinite alternate;
     background-size: 300%;
+}
+
+.container{
+    width: 40%;
+    height: 60%;
+    /* background: #fff; */
 }
 
 /* GRADIENT ANIMATION */
