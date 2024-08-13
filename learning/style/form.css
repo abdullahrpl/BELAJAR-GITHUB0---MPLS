@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: Poppins;
 }
 body{
     width: 100vw;
@@ -18,6 +19,16 @@ body{
     height: 60%;
     /* background: #fff; */
 }
+fieldset{
+    background: azure;
+}
+legend{
+    font-weight: bold;
+    background-color: #0088cc;
+    padding: 15px 48px;
+}
+
+
 
 /* GRADIENT ANIMATION */
 
