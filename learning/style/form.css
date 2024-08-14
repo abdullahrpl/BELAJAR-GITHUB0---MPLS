@@ -39,7 +39,7 @@ legend{
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 50px;
     box-sizing: border-box;
 }
 input, label{
@@ -56,12 +56,13 @@ input{
     background-color: #475;
     padding: 13px;
     border: none;
-    border-radius: 100px;
+    border-radius: 10px;
     color: white;
     font-weight: bold;
     margin-top: 19px;
+    margin-bottom: 20px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .btn-login:hover{
     background-color: rgba(68, 119, 85, 0.809);
