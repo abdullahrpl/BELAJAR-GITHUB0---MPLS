@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Request</title>
+    <link rel="stylesheet" href="style/request_login.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <h1>Software Request</h1>
+
+            <!-- LOGIN  -->
+             <form action="index.html" method="post" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Name <span>*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Employee ID <span>*</span></label>
+                    <input type="number" id="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Mobile No/Extn.No</label>
+                    <input type="number" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Wich software do you require <span>*</span></label>
+                    <div class="checkbox">
+                        <input type="checkbox" id="sofware1">
+                        <label for="sofware1">Software A</label>
+                    </div>
+                    <div class="checkbox">
+                        <input  type="checkbox" id="sofware2">
+                        <label for="sofware2">Software B</label>
+                    </div>
+                    <div class="checkbox">
+                        <input  type="checkbox" id="sofware3">
+                        <label for="sofware3">Software C</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name">How urgently do you need it? <span>*</span></label>
+                    <div class="radiobox">
+                        <input  type="radio" name="option" id="radio1" required>
+                        <label for="radio1">As soon as possible</label>
+                    </div>
+                    <div class="radiobox">
+                        <input  type="radio" name="option" id="radio2" required>
+                        <label for="radio2">Within in 2 to 3 weeks</label>
+                    </div>
+                    <div class="radiobox">
+                        <input  type="radio" name="option" id="radio3" required>
+                        <label for="radio1">I'm in no hurry</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Require</button>
+                </div>
+             </form>
+        </fieldset>
+    </div>
+
+    <script>
+        function validateForm() {
+            let softwareChecked = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            if (softwareChecked < 1) {
+                alert('Please select at least 1 software');
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</body>
+</html>
