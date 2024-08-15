@@ -55,12 +55,24 @@ input{
     border-radius: 0;
     transition: 0.2;
 }
+input:hover{
+    border: solid 2px #4a4a4a;
+}
+input:focus{
+    border: solid 2px #000;
+}
 
 .checkbox{
     padding: 0 0 15px;
 }
+.checkbox input{
+    cursor: pointer;
+}
 .radiobox{
     padding: 0 0 15px;
+}
+.radiobox input{
+    cursor: pointer;
 }
 button{
     width: 100%;
